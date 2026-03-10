@@ -20,5 +20,4 @@ brew install Dcycle-by-WUM/tap/dc-walrus
 Notes:
 
 - macOS and Linux users can install through Homebrew
-- Windows users install from versioned GitHub Releases (no manual zip sharing required)
 - `Formula/dc-walrus.rb` is expected to be created or updated automatically by GoReleaser during release
