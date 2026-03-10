@@ -9,16 +9,16 @@ class DcWalrus < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Dcycle-by-WUM/dcycle-backend-app/releases/download/v0.0.1/dc-walrus_0.0.1_darwin_amd64.tar.gz"
-      sha256 "4806afe3cc09d261c813be558db83e22d89cf3854cf645e325331079dd11d06a"
+      url "https://github.com/Dcycle-by-WUM/dc-walrus-releases/releases/download/v0.0.1/dc-walrus_0.0.1_darwin_amd64.tar.gz"
+      sha256 "47d6963d2f352d31d8e4dd8da67bc44a7ed511e8ce3d55020439af02baf07342"
 
       define_method(:install) do
         bin.install "dc-walrus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Dcycle-by-WUM/dcycle-backend-app/releases/download/v0.0.1/dc-walrus_0.0.1_darwin_arm64.tar.gz"
-      sha256 "8b4084334dc4ab5b69fbff4e6de3e5971582d8a14b2ba41e15ce77b385f56cf4"
+      url "https://github.com/Dcycle-by-WUM/dc-walrus-releases/releases/download/v0.0.1/dc-walrus_0.0.1_darwin_arm64.tar.gz"
+      sha256 "d31959ee600543eb6a035d30ffa061d9b7da5e9fc1903532286e72091f77686f"
 
       define_method(:install) do
         bin.install "dc-walrus"
@@ -28,15 +28,15 @@ class DcWalrus < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dcycle-by-WUM/dcycle-backend-app/releases/download/v0.0.1/dc-walrus_0.0.1_linux_amd64.tar.gz"
-      sha256 "c24e682e3d838d03f5a60d98c67184091744db1a76c99700fc4ab97bb43f0fac"
+      url "https://github.com/Dcycle-by-WUM/dc-walrus-releases/releases/download/v0.0.1/dc-walrus_0.0.1_linux_amd64.tar.gz"
+      sha256 "afb26cbe16f3cbe868091d653dff375bde60a8a43bb9993d963b1ef550ecce69"
       define_method(:install) do
         bin.install "dc-walrus"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dcycle-by-WUM/dcycle-backend-app/releases/download/v0.0.1/dc-walrus_0.0.1_linux_arm64.tar.gz"
-      sha256 "6888161321abdc6cd698ae47d76eb6d83508139ed1c7e1d6d9a2b2356472acd0"
+      url "https://github.com/Dcycle-by-WUM/dc-walrus-releases/releases/download/v0.0.1/dc-walrus_0.0.1_linux_arm64.tar.gz"
+      sha256 "dc25063fcfe79a8a90e585a701470e6db5ed3864ea29c1b31aba0e8107a0adbe"
       define_method(:install) do
         bin.install "dc-walrus"
       end
