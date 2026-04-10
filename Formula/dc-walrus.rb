@@ -5,20 +5,20 @@
 class DcWalrus < Formula
   desc "Dcycle CLI (Go rewrite)"
   homepage "https://github.com/Dcycle-by-WUM/dcycle-backend-app/tree/main/dc-go"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Dcycle-by-WUM/dc-walrus-releases/releases/download/v0.0.4/dc-walrus_0.0.4_darwin_amd64.tar.gz"
-      sha256 "cb412853b164717bf8940287750437ff4cdca7a838bea9cd0232c758f48e2e9d"
+      url "https://github.com/Dcycle-by-WUM/dc-walrus-releases/releases/download/v0.0.5/dc-walrus_0.0.5_darwin_amd64.tar.gz"
+      sha256 "3e511a50e924957339b566844a5316ec14abc523e6137d9897af48177d813981"
 
       define_method(:install) do
         bin.install "dc-walrus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Dcycle-by-WUM/dc-walrus-releases/releases/download/v0.0.4/dc-walrus_0.0.4_darwin_arm64.tar.gz"
-      sha256 "b34aaa43a16c7cfece173f98519685b6ca759f7d7ebb88db6f844ab231758192"
+      url "https://github.com/Dcycle-by-WUM/dc-walrus-releases/releases/download/v0.0.5/dc-walrus_0.0.5_darwin_arm64.tar.gz"
+      sha256 "0d42dd8d0fea0cbff7e46ec211f38c15694f8be09206b95248f12a9b7f1b0170"
 
       define_method(:install) do
         bin.install "dc-walrus"
@@ -28,15 +28,15 @@ class DcWalrus < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dcycle-by-WUM/dc-walrus-releases/releases/download/v0.0.4/dc-walrus_0.0.4_linux_amd64.tar.gz"
-      sha256 "13be54df4ca85d343f8f4389d31235905982d02b542ddbccf2576393bbe4dd37"
+      url "https://github.com/Dcycle-by-WUM/dc-walrus-releases/releases/download/v0.0.5/dc-walrus_0.0.5_linux_amd64.tar.gz"
+      sha256 "6ca8f66b7be2b1e77112106fad849c0ffeb15ed430ee9f3a5381916ba15e2789"
       define_method(:install) do
         bin.install "dc-walrus"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dcycle-by-WUM/dc-walrus-releases/releases/download/v0.0.4/dc-walrus_0.0.4_linux_arm64.tar.gz"
-      sha256 "a5897fa8c80a36debe2e1fa08b48e8ead38d46707e189295ab682ca2c8613572"
+      url "https://github.com/Dcycle-by-WUM/dc-walrus-releases/releases/download/v0.0.5/dc-walrus_0.0.5_linux_arm64.tar.gz"
+      sha256 "96a3387f9ec87c867ed6f4695f6eaf826e6868bbf8a19bb4d8000631bb732e7f"
       define_method(:install) do
         bin.install "dc-walrus"
       end
