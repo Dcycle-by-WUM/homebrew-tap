@@ -5,20 +5,20 @@
 class Dcy < Formula
   desc "Dcycle CLI"
   homepage "https://github.com/Dcycle-by-WUM/dcycle-backend-app/tree/main/dc-go"
-  version "0.0.92"
+  version "0.0.93"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Dcycle-by-WUM/dcy-releases/releases/download/v0.0.92/dcy_0.0.92_darwin_amd64.tar.gz"
-      sha256 "c6150d2bebefd0cb941b45795dcb16363457226e111824a4c0132ea3dfd7939a"
+      url "https://github.com/Dcycle-by-WUM/dcy-releases/releases/download/v0.0.93/dcy_0.0.93_darwin_amd64.tar.gz"
+      sha256 "41ec81de900e66284262fe196a00b03701e40519e67c15c6c1d50b3ba27796cc"
 
       define_method(:install) do
         bin.install "dcy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Dcycle-by-WUM/dcy-releases/releases/download/v0.0.92/dcy_0.0.92_darwin_arm64.tar.gz"
-      sha256 "8b55046b26adf7016abdb54cee4a1b3d58adb82d3f3e698f7bf2eb12d54a2f18"
+      url "https://github.com/Dcycle-by-WUM/dcy-releases/releases/download/v0.0.93/dcy_0.0.93_darwin_arm64.tar.gz"
+      sha256 "c7d3879f694fb30eb6f213fc1a1c7777d0e34835eb855a7dc963ccd9db5719d8"
 
       define_method(:install) do
         bin.install "dcy"
@@ -28,15 +28,15 @@ class Dcy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dcycle-by-WUM/dcy-releases/releases/download/v0.0.92/dcy_0.0.92_linux_amd64.tar.gz"
-      sha256 "99a21868b15b79616f359aed923f0195894246954555ae588548231f65489520"
+      url "https://github.com/Dcycle-by-WUM/dcy-releases/releases/download/v0.0.93/dcy_0.0.93_linux_amd64.tar.gz"
+      sha256 "e63e68fb89669c8dcf72c74960da822b11348e661401dc2ad3ff5920958e71b4"
       define_method(:install) do
         bin.install "dcy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dcycle-by-WUM/dcy-releases/releases/download/v0.0.92/dcy_0.0.92_linux_arm64.tar.gz"
-      sha256 "01748c08122a094214916982544e82c39886adda549c66b53e1399eb8810f956"
+      url "https://github.com/Dcycle-by-WUM/dcy-releases/releases/download/v0.0.93/dcy_0.0.93_linux_arm64.tar.gz"
+      sha256 "99eca3295b38b0050a5af4ec10f830d4486943efff07c672c1f6ad11181e9881"
       define_method(:install) do
         bin.install "dcy"
       end
